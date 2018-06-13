@@ -54,17 +54,7 @@ displayErr() {
     sleep 3
     
     sudo apt-get -y install aptitude
-    
-    output " "
-    output "Installing Nginx server."
-    output " "
-    sleep 3
-    
-    sudo aptitude -y install nginx
-    sudo rm /etc/nginx/sites-enabled/default
-    sudo service nginx start
-    sudo service cron start
-	
+        
 
     #Making Nginx a bit hard
     echo 'map $http_user_agent $blockedagent {
